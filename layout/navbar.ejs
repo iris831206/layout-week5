@@ -1,0 +1,71 @@
+<aside class="navbar navbar-expand-lg navbar-light bg-light vh-100 position-fixed">
+  <div class="container-fluid d-flex flex-column h-100 px-0">
+    <!-- 因為容器內部是以內容決定寬高的，所以要設h-100,w-100讓內層容器滿寬高，不然內容會被限縮在中間的位置 -->
+    <!-- px-0去除左右padding讓內層容器可以貼邊 -->
+    <div class="w-100 mt-3">
+      <a class="navbar-brand px-4" href="#">
+        <img src="../assets/images/logo-ANSWER.svg" alt="icon" />
+      </a>
+      <ul class="navbar-nav d-flex flex-column mt-3 fw-bold">
+        <li class="nav-item">
+          <a class="nav-link px-4 border-start border-3 <%= page === 'dashboard' ? 'border-success link-success active ' : '' %>" aria-current="page" href="#">
+            <span class="material-symbols-outlined align-bottom me-2">
+              insert_chart
+            </span>
+            Dashboard
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4 border-start border-3 <%= page === 'question' ? 'border-success link-success active ' : '' %>" aria-current="page" href="#">
+            <span class="material-symbols-outlined align-bottom me-2">
+              forum
+            </span>
+            Question
+          </a>
+        </li>
+        <li class="nav-item">
+          <!-- 當page參數傳入，加入class樣式 -->
+          <a class="nav-link px-4 border-start border-3 <%= page === 'assignment' ? 'border-success link-success active ' : '' %>" aria-current="page" href="index.html">
+            <span class="material-symbols-outlined align-bottom me-2">
+              assignment
+            </span>
+            Assignment</a>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4 border-start border-3 <%= page === 'course' ? 'border-success link-success active ' : '' %>" aria-current="page" href="#">
+            <span class="material-symbols-outlined align-bottom me-2">
+              video_library
+            </span>
+            Course
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4 border-start border-3 <%= page === 'admin' ? 'border-success link-success active ' : '' %>" aria-current="page" href="admin.html">
+            <span class="material-symbols-outlined align-bottom me-2">
+              group
+            </span>
+            Admin
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-4 border-start border-3 <%= page === 'settings' ? 'border-success link-success active ' : '' %>" aria-current="page" href="#">
+            <span class="material-symbols-outlined align-bottom me-2">
+              settings
+            </span>
+            Settings
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="w-100 px-4 d-flex align-items-center">
+      <div class="flex-shrink-0">
+        <img src="../assets/images/andychen.jpeg" width="40px" height="40px" alt="avatar" class="rounded-circle object-fit-cover">
+      </div>
+      <div class="flex-grow-1 ms-3">
+        <p class="fw-bold">Andy Chen</p>
+        <a href="mailto:andy0401@mail.com" class="link-secondary" style="font-size: 14px;">andy0401@mail.com</a>
+      </div>
+    </div>
+  </div>
+</aside>

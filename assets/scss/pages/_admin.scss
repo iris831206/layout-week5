@@ -1,0 +1,15 @@
+.custom-button {
+  span {
+    color: $success;
+  }
+  :hover span {
+    color: $white; /* hover 時的文字顏色 */
+  }
+  :active,.active span {
+    color: $white;
+  }
+  :focus span {
+    color: $white;
+  }
+}
+
