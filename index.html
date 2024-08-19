@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,8 +9,8 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-<script type="module" crossorigin src="/layout-week5/assets/main-82f29897.js"></script>
-<link rel="stylesheet" href="/layout-week5/assets/main-368871cd.css">
+<script type="module" crossorigin src="/layout-week5/assets/main-3e836e24.js"></script>
+<link rel="stylesheet" href="/layout-week5/assets/main-c372d6ce.css">
 
 <body>
   <aside class="navbar navbar-expand-lg navbar-light bg-light vh-100 position-fixed">
@@ -107,18 +107,18 @@
           </ul>
         </li>
       </ul>
-    </div>
-    <div>
-      <button type="button" class="btn">
-        <span class="material-symbols-outlined align-bottom">
-          search
-        </span>
-      </button>
-      <button type="button" class="btn">
-        <span class="material-symbols-outlined align-bottom">
-          notifications_active
-        </span>
-      </button>
+      <div class="ms-auto">
+        <button type="button" class="btn">
+          <span class="material-symbols-outlined align-bottom">
+            search
+          </span>
+        </button>
+        <button type="button" class="btn">
+          <span class="material-symbols-outlined align-bottom">
+            notifications_active
+          </span>
+        </button>
+      </div>
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown"
       aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -126,14 +126,23 @@
     </button>
   </div>
 </header>            <section class="d-flex justify-content-between mb-2">
-              <div>All (4)
-                <button type="button" class="btn p-0">
+              
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  All (4)
                   <span class="material-symbols-outlined align-bottom link-success">
                     keyboard_arrow_down
                   </span>
-                </button>
-
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
               </div>
+
+
               <div>
                 <p class="text-secondary">2 comments</p>
               </div>
@@ -552,9 +561,9 @@
   </div>                </div>
               </div>
               <!-- Reply -->
-              <div class="mt-3 d-flex justify-content-end position-relative mb-5">
-                <div>
-                  <button type="button" class="me-4 btn">
+              <div class="mt-3 d-flex position-relative mb-5 flex-column flex-md-row justify-content-md-between">
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="me-md-4 btn">
                     <span class="material-symbols-outlined align-bottom">
                       chevron_left
                     </span>
@@ -565,11 +574,13 @@
                     </span>
                   </button>
                 </div>
-                <button type="button" class="btn btn-outline-success me-3 ms-auto">Mark as read</button>
-                <button type="button" class="btn btn-success" data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                  Reply
-                </button>
+                <div class="d-grid gap-2 d-md-block">
+                  <button type="button" class="btn btn-outline-success me-md-3 ms-md-auto">Mark as read</button>
+                  <button type="button" class="btn btn-success" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Reply
+                  </button>
+                </div>
                 <!-- 要設定collapse方向，須在外層下relative，內層下absolute -->
                 <div class="collapse position-absolute bottom-0 end-0 w-100" id="collapseExample">
                   <div class="card">

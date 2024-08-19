@@ -9,8 +9,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-<script type="module" crossorigin src="/layout-week5/assets/main-82f29897.js"></script>
-<link rel="stylesheet" href="/layout-week5/assets/main-368871cd.css">
+<script type="module" crossorigin src="/layout-week5/assets/main-3e836e24.js"></script>
+<link rel="stylesheet" href="/layout-week5/assets/main-c372d6ce.css">
 
 <body>
     <aside class="navbar navbar-expand-lg navbar-light bg-light vh-100 position-fixed">
@@ -92,26 +92,27 @@
                         <button type="button" class="btn p-0 me-1" data-bs-toggle="modal" data-bs-target="#newModal">
                             <span class="material-symbols-outlined align-bottom text-success">
                                 add
-                            </span></button>
-                        Add New Admin
-                    </div>
-                    <div>
-                        <button type="button" class="btn">
-                            <span class="material-symbols-outlined align-bottom">
-                                search
                             </span>
+                            Add New Admin
                         </button>
-                        <button type="button" class="btn">
-                            <span class="material-symbols-outlined align-bottom">
-                                notifications_active
-                            </span>
-                        </button>
+                        <div class="ms-auto">
+                            <button type="button" class="btn">
+                                <span class="material-symbols-outlined align-bottom">
+                                    search
+                                </span>
+                            </button>
+                            <button type="button" class="btn">
+                                <span class="material-symbols-outlined align-bottom">
+                                    notifications_active
+                                </span>
+                            </button>
+                        </div>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 </div>
             </header>
             <!-- Table -->
@@ -120,9 +121,11 @@
                     <thead>
                         <tr>
                             <th scope="col">ID
+                                <button type="button" class="btn p-0 mb-1">
                                 <span class="material-symbols-outlined align-bottom text-success">
                                     arrow_downward
                                 </span>
+                            </button>
                             </th>
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
@@ -330,7 +333,7 @@
                     <nav aria-label="...">
                         <ul class="pagination">
                             <li class="page-item disabled">
-                                <a class="page-link" href="#">
+                                <a class="page-link px-1" href="#">
                                     <span class="material-symbols-outlined align-bottom">
                                         chevron_left
                                     </span>
@@ -342,7 +345,7 @@
                             </li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item custom-button">
-                                <a class="page-link" href="#">
+                                <a class="page-link px-1" href="#">
                                     <span class="material-symbols-outlined align-bottom">
                                         chevron_right
                                     </span>
@@ -360,8 +363,8 @@
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-body position-relative">
-                <button type="button" class="btn-close position-absolute end-0 top-0 p-3"
-                    data-bs-dismiss="modal" aria-label="Close">
+                <button type="button" class="btn-close position-absolute end-0 top-0 p-3" data-bs-dismiss="modal"
+                    aria-label="Close">
                 </button>
                 <div class="d-flex">
                     <div>
@@ -375,11 +378,15 @@
                         <p class="text-muted fz-14">emir.wicks@mail.com</p>
                         <div class="d-flex align-items-end">
                             <p class="bg-light px-2 fz-14 me-auto">Verified</p>
-                            <button type="button" class="btn p-0" data-bs-toggle="collapse"
+                            <button type="button" class="btn p-0 collapsed" data-bs-toggle="collapse"
                                 data-bs-target="#collapsevisibility" aria-expanded="false"
                                 aria-controls="collapsevisibility">
-                                <span class="material-symbols-outlined text-success text-end align-bottom">
+                                <span class="material-symbols-outlined text-success text-end align-bottom open">
                                     keyboard_arrow_down
+                                </span>
+
+                                <span class="material-symbols-outlined align-bottom text-success close">
+                                    keyboard_arrow_up
                                 </span>
                             </button>
                         </div>
@@ -390,10 +397,9 @@
                 <div class="collapse" id="collapsevisibility">
                     <div class="card-body p-3">
                         <div class="d-flex justify-content-end">
-                            <button type="button"
-                                class="btn btn-outline-danger me-3">Deactivate</button>
+                            <button type="button" class="btn btn-outline-danger me-3">Deactivate</button>
                             <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                            data-bs-target="#editModal">Edit</button>
+                                data-bs-target="#editModal">Edit</button>
                         </div>
                     </div>
                 </div>
@@ -412,12 +418,12 @@
                 <h5 class="fw-bold mb-3">Account</h5>
                 <form>
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" value="Emir Wicks" readonly>
+                        <label for="newName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="newName" value="Emir Wicks" readonly>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" value="emir.wicks@mail.com" readonly>
+                        <label for="newEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="newEmail" value="emir.wicks@mail.com" readonly>
                     </div>
                     <hr />
                     <h5 class="fw-bold">Verification</h5>
@@ -487,7 +493,7 @@
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title fw-bold" id="editModalLabel">New Admin</h5>
+                <h5 class="modal-title fw-bold" id="newModalLabel">New Admin</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
