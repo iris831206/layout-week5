@@ -3,4 +3,8 @@
     margin-left: auto;
   }
 
- 
+  @media only screen and (max-width: 768px) {
+    .content {
+      width: calc(100% - 220px);
+    }
+  }

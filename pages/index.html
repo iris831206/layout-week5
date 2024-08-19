@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-hant">
 
 <head>
   <meta charset="UTF-8" />
@@ -17,14 +17,23 @@
         <div class="row gy-3">
           <%- include('./layout/header'); -%>
             <section class="d-flex justify-content-between mb-2">
-              <div>All (4)
-                <button type="button" class="btn p-0">
+              
+              <div class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  All (4)
                   <span class="material-symbols-outlined align-bottom link-success">
                     keyboard_arrow_down
                   </span>
-                </button>
-
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
               </div>
+
+
               <div>
                 <p class="text-secondary">2 comments</p>
               </div>
@@ -99,9 +108,9 @@
                 </div>
               </div>
               <!-- Reply -->
-              <div class="mt-3 d-flex justify-content-end position-relative mb-5">
-                <div>
-                  <button type="button" class="me-4 btn">
+              <div class="mt-3 d-flex position-relative mb-5 flex-column flex-md-row justify-content-md-between">
+                <div class="d-flex justify-content-between">
+                  <button type="button" class="me-md-4 btn">
                     <span class="material-symbols-outlined align-bottom">
                       chevron_left
                     </span>
@@ -112,11 +121,13 @@
                     </span>
                   </button>
                 </div>
-                <button type="button" class="btn btn-outline-success me-3 ms-auto">Mark as read</button>
-                <button type="button" class="btn btn-success" data-bs-toggle="collapse"
-                  data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                  Reply
-                </button>
+                <div class="d-grid gap-2 d-md-block">
+                  <button type="button" class="btn btn-outline-success me-md-3 ms-md-auto">Mark as read</button>
+                  <button type="button" class="btn btn-success" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Reply
+                  </button>
+                </div>
                 <!-- 要設定collapse方向，須在外層下relative，內層下absolute -->
                 <div class="collapse position-absolute bottom-0 end-0 w-100" id="collapseExample">
                   <div class="card">

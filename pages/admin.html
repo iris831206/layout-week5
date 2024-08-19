@@ -20,26 +20,27 @@
                         <button type="button" class="btn p-0 me-1" data-bs-toggle="modal" data-bs-target="#newModal">
                             <span class="material-symbols-outlined align-bottom text-success">
                                 add
-                            </span></button>
-                        Add New Admin
-                    </div>
-                    <div>
-                        <button type="button" class="btn">
-                            <span class="material-symbols-outlined align-bottom">
-                                search
                             </span>
+                            Add New Admin
                         </button>
-                        <button type="button" class="btn">
-                            <span class="material-symbols-outlined align-bottom">
-                                notifications_active
-                            </span>
-                        </button>
+                        <div class="ms-auto">
+                            <button type="button" class="btn">
+                                <span class="material-symbols-outlined align-bottom">
+                                    search
+                                </span>
+                            </button>
+                            <button type="button" class="btn">
+                                <span class="material-symbols-outlined align-bottom">
+                                    notifications_active
+                                </span>
+                            </button>
+                        </div>
                     </div>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 </div>
             </header>
             <!-- Table -->
@@ -48,9 +49,11 @@
                     <thead>
                         <tr>
                             <th scope="col">ID
+                                <button type="button" class="btn p-0 mb-1">
                                 <span class="material-symbols-outlined align-bottom text-success">
                                     arrow_downward
                                 </span>
+                            </button>
                             </th>
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
@@ -258,7 +261,7 @@
                     <nav aria-label="...">
                         <ul class="pagination">
                             <li class="page-item disabled">
-                                <a class="page-link" href="#">
+                                <a class="page-link px-1" href="#">
                                     <span class="material-symbols-outlined align-bottom">
                                         chevron_left
                                     </span>
@@ -270,7 +273,7 @@
                             </li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item custom-button">
-                                <a class="page-link" href="#">
+                                <a class="page-link px-1" href="#">
                                     <span class="material-symbols-outlined align-bottom">
                                         chevron_right
                                     </span>

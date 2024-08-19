@@ -1,0 +1,9 @@
+.navbar{
+    width: 296px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .navbar{
+      width: 220px;
+    }
+  }
